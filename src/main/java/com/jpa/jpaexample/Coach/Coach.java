@@ -14,7 +14,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Coach {
-    
+
+    //Un entrenador entrena un equipo
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
