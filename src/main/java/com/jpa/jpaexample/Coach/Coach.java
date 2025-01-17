@@ -1,5 +1,6 @@
-package com.jpa.jpaexample.Club;
+package com.jpa.jpaexample.Coach;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,10 +13,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Club {
+public class Coach {
     
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+
+    @Column(name = "last_Name")
+    private String lastName;
+    private Integer age;
+    private String nationality;
 }
